@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fond_bouton">#ab8369</color>
+    <color name="fond_2">#dec2af</color>
+    <color name="redColor">#FF0000</color>
+    <color name="Lavendar">#8692f7</color>
+    <color name="grey">#D8D9DA</color>
+    <color name="vert">#94A684</color>
+    <color name="mauve">#ED9ED6</color>
+
+
+
+
+</resources>

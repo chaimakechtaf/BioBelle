@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BioBelle</string>
+    <string name="open_drawer">Ouvrir le tiroir</string>
+    <string name="close_drawer">Fermer le tiroir</string>
+    <string name="total_price_format">Total Price: %.2f MAD</string>
+    <string name="total_products_format">Total Products: </string>
+    <string name="first_fragment_label">Votre libellé ici</string>
+    <string name="second_fragment_label">Votre libellé ici</string>
+</resources>

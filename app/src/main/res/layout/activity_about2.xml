@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:background="@drawable/rawaa"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <!-- RelativeLayout to contain both NavigationView and main content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Include your custom navbar layout -->
+    <include
+        layout="@layout/header"
+        android:id="@+id/header" />
+
+    <!-- FrameLayout to hold the main content -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header">
+
+    <!-- ScrollView and its content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- Linear Layout for About Us Content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Company Name -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo" />
+
+                <!-- Company Description -->
+                <TextView
+                    android:layout_width="355dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="At BioBelle, we believe that beauty should be accessible to everyone. Our mission is to provide a seamless and enjoyable shopping experience for all your cosmetic needs. We understand the importance of beauty in enhancing confidence and self-expression, and that's why we've created an easy-to-use and effective application that brings the world of cosmetics to your fingertips."
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="392dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Why Choose Us?"
+                        android:textAlignment="center"
+                        android:textColor="@color/fond_bouton"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/us" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="User-Friendly Experience: Our application is designed with you in mind. We've worked hard to create a user-friendly interface that ensures a smooth and hassle-free shopping journey. Whether you're a beauty enthusiast or a first-time buyer, our application is tailored to meet your needs."
+                             />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="392dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Our Vision"
+                        android:textAlignment="center"
+                        android:textColor="@color/fond_bouton"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/chaima" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="At BioBelle, we envision a world where beauty knows no bounds. We aspire to empower individuals to express themselves through the art of cosmetics. By offering a convenient platform to discover and purchase the latest beauty trends, we hope to inspire confidence and celebrate uniqueness."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="392dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Meet the Creator "
+                        android:textAlignment="center"
+                        android:textColor="@color/fond_bouton"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/mee" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Behind BioBelle stands Chaimaa Elkachtaf, a passionate individual with a vision for making beauty accessible to all. Chaimaa started this journey with the goal of revolutionizing the way we experience and purchase cosmetics. With a deep love for beauty and a commitment to innovation, she has worked tirelessly to bring you an application that combines efficiency with an extensive range of high-quality products."
+                             />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="392dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Join Us on this Beautiful Journey "
+                        android:textAlignment="center"
+                        android:textColor="@color/fond_bouton"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Our Email : belegant204@gmail.com"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Our Phone : +212 576345512"
+                            android:textColor="#000"
+                            android:layout_marginLeft="40dp"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="40dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="follow us on social media:"
+                                android:textColor="#000"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/facebook"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/faceb" />
+
+                            <ImageView
+                                android:id="@+id/insta"
+                                android:layout_width="40dp"
+                                android:layout_height="26dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/insta" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/nav_view_background"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

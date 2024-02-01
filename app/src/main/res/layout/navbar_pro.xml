@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/header_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    tools:context=".NavbarPro"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        >
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="67dp"
+        android:layout_height="40dp"
+        android:src="@drawable/home"
+        android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="@color/fond_bouton"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:layout_marginLeft="60dp"
+        >
+        <ImageView
+            android:id="@+id/Products"
+            android:layout_width="67dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_list_24"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Products"
+            android:textAlignment="center"
+            android:textColor="@color/fond_bouton"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:layout_marginLeft="60dp">
+        <ImageView
+            android:id="@+id/order"
+            android:layout_width="67dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_fact_check_24"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orders"
+            android:textAlignment="center"
+            android:textColor="@color/fond_bouton"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

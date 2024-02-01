@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rawaa"
+    tools:context=".Inscription">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            tools:context=".NavbarPro"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                >
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/home_home"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textAlignment="center"
+                    android:textColor="@color/fond_bouton"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="vertical"
+                android:layout_marginLeft="60dp"
+                >
+                <ImageView
+                    android:id="@+id/Products"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/products"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Products"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="vertical"
+                android:layout_marginLeft="60dp">
+                <ImageView
+                    android:id="@+id/order"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/order"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Orders"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginTop="100dp"
+            android:focusableInTouchMode="false"
+            android:hint="Chemin du fichier"
+            android:longClickable="false" />
+
+        <Button
+            android:id="@+id/btnAddimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Product's Image"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/fond_bouton"
+            android:onClick="onSelectFileClick" />
+
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnAddimg"
+            android:layout_marginTop="16dp"
+            android:hint="Product Name"/>
+
+        <EditText
+            android:id="@+id/priceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEditText"
+            android:layout_marginTop="16dp"
+            android:inputType="numberDecimal"
+            android:hint="Product Price"/>
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceEditText"
+            android:layout_marginTop="16dp"
+            android:text="Add Product"
+            android:layout_marginLeft="100dp"
+            android:layout_marginVertical="50dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/fond_bouton"
+            android:onClick="uploadProduct" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
